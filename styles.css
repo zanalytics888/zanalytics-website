@@ -384,6 +384,17 @@ ul { list-style: none; }
   transform: translateY(-4px);
 }
 
+.hero-stat-icon {
+  stroke: var(--purple-light);
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.hero-stat-card:hover .hero-stat-icon {
+  opacity: 1;
+  stroke: var(--cyan);
+}
+
 .hero-stat-num {
   display: block;
   font-size: 2.2rem;
