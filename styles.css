@@ -201,6 +201,12 @@ ul { list-style: none; }
   color: white;
 }
 
+.nav-logo-img {
+  height: 60px;
+  width: auto;
+  mix-blend-mode: lighten;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
