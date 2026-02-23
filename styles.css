@@ -838,6 +838,12 @@ ul { list-style: none; }
   justify-content: space-between;
 }
 
+.footer-logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
 .footer-copy {
   font-size: 0.8rem;
   color: var(--text-muted);
