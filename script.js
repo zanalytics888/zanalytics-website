@@ -36,7 +36,6 @@ const observer = new IntersectionObserver((entries) => {
 
 // Apply fade-in to elements
 const animatedSelectors = [
-  '.hero-content',
   '.hero-stats-grid',
   '.stripe-heading',
   '.stripe-text',

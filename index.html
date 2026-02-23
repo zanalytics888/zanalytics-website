@@ -15,9 +15,13 @@
   <!-- Navigation -->
   <nav class="navbar" id="navbar">
     <div class="container nav-container">
-      <a href="#" class="nav-logo">
-        <img src="zAnalytics_logo.png" alt="zAnalytics" class="nav-logo-img">
-      </a>
+      <div class="nav-left">
+        <img src="zAnalytics_logo.png" alt="zAnalytics" class="hero-logo-img">
+        <div class="hero-counter">
+          <div class="hero-counter-number"><span class="hero-counter-num" data-target="10">0</span><span class="hero-counter-plus">+</span></div>
+          <span class="hero-counter-label">Years in<br>Data Engineering</span>
+        </div>
+      </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
@@ -42,14 +46,13 @@
     </div>
     <div class="container hero-container">
       <div class="hero-content">
-        <div class="hero-counter">
-          <div class="hero-counter-number"><span class="hero-counter-num" data-target="10">0</span><span class="hero-counter-plus">+</span></div>
-          <span class="hero-counter-label">Years in<br>Data Engineering</span>
+        <div class="hero-title-row">
+          <img src="zAnalytics_logo.png" alt="zAnalytics" class="hero-title-logo">
+          <h1 class="hero-title">
+            Your data is messy.<br>
+            <span class="hero-highlight">We make it work.</span>
+          </h1>
         </div>
-        <h1 class="hero-title">
-          Your data is messy.<br>
-          <span class="hero-highlight">We make it work.</span>
-        </h1>
         <div class="hero-stats-grid">
           <div class="hero-stat-card">
             <svg class="hero-stat-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -83,13 +86,6 @@
         <p class="hero-subtitle">
           zAnalytics is a data consulting firm that helps companies of every size — from startups needing their first data pipeline to enterprises scaling petabyte platforms — on Snowflake, Databricks, DBT, and the modern cloud stack.
         </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">
-            Start a Conversation
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
-          <a href="#solutions" class="btn btn-ghost">See How We Can Help</a>
-        </div>
       </div>
     </div>
   </header>
@@ -97,67 +93,7 @@
   <!-- Solutions Stripes -->
   <div id="solutions">
 
-    <!-- ===== STRIPE 1: Data Architecture & Modeling ===== -->
-    <section class="stripe stripe-dark">
-      <div class="container stripe-container">
-        <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Data Architecture & Modeling</h2>
-        <div class="stripe-content">
-          <div class="stripe-text">
-            <h2 class="stripe-title">Bad data models don't scale — they collapse</h2>
-            <p class="stripe-pain">Your warehouse is a mess of ad-hoc tables nobody understands. Reports break when upstream changes. We design scalable data models and lakehouse architectures built for growth, not just today's report.</p>
-          </div>
-          <div class="stripe-proof">
-            <h3 class="proof-heading">We've done this before</h3>
-            <div class="proof-items">
-              <div class="proof-item">
-                <span class="proof-company">Major Pharmaceutical Retail Chain</span>
-                <p>Designed scalable physical data models using Snowflake Dynamic Tables, Tasks, and Procedures for an enterprise platform.</p>
-              </div>
-              <div class="proof-item">
-                <span class="proof-company">Global Footwear Retail Company</span>
-                <p>Built platinum-layer data models on Snowflake with DBT across a petabyte-scale, cross-cloud architecture.</p>
-              </div>
-              <div class="proof-item">
-                <span class="proof-company">Top U.S. Financial Institution</span>
-                <p>Designed dimensional data models powering enterprise reporting and large-scale data warehouses.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== STRIPE 2: ETL & Pipeline Engineering ===== -->
-    <section class="stripe stripe-gradient">
-      <div class="container stripe-container">
-        <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="12" y1="2" x2="12" y2="22"/></svg>ETL & Pipeline Engineering</h2>
-        <div class="stripe-content">
-          <div class="stripe-text">
-            <h2 class="stripe-title">Fragile pipelines, silent failures</h2>
-            <p class="stripe-pain">Every new source means another copy-pasted pipeline. When one breaks, everything downstream fails silently. We build metadata-driven ETL that scales with your business — not a pile of hardcoded jobs.</p>
-          </div>
-          <div class="stripe-proof">
-            <h3 class="proof-heading">We've done this before</h3>
-            <div class="proof-items">
-              <div class="proof-item">
-                <span class="proof-company">Global Footwear Retail Company</span>
-                <p>Built metadata-driven ETL on ADF and Databricks ingesting 25+ source systems with full auditing and logging.</p>
-              </div>
-              <div class="proof-item">
-                <span class="proof-company">National Lifestyle Apparel Brand</span>
-                <p>Designed and implemented ETL pipelines on the Azure BI stack integrating multiple source systems.</p>
-              </div>
-              <div class="proof-item">
-                <span class="proof-company">Healthcare Analytics Company</span>
-                <p>Built and optimized SSIS ETL pipelines, troubleshooting failures in production with 24/7 support.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== STRIPE 3: Cloud Platform Migration ===== -->
+    <!-- ===== STRIPE 1: Cloud Platform Migration ===== -->
     <section class="stripe stripe-dark">
       <div class="container stripe-container">
         <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>Cloud Platform Migration</h2>
@@ -187,8 +123,94 @@
       </div>
     </section>
 
-    <!-- ===== STRIPE 4: Observability & Cost Optimization ===== -->
+    <!-- ===== STRIPE 2: Data Architecture & Modeling ===== -->
     <section class="stripe stripe-gradient">
+      <div class="container stripe-container">
+        <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Data Architecture & Modeling</h2>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Bad data models don't scale — they collapse</h2>
+            <p class="stripe-pain">Your warehouse is a mess of ad-hoc tables nobody understands. Reports break when upstream changes. We design scalable data models and lakehouse architectures built for growth, not just today's report.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Major Pharmaceutical Retail Chain</span>
+                <p>Designed scalable physical data models using Snowflake Dynamic Tables, Tasks, and Procedures for an enterprise platform.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Global Footwear Retail Company</span>
+                <p>Built platinum-layer data models on Snowflake with DBT across a petabyte-scale, cross-cloud architecture.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Top U.S. Financial Institution</span>
+                <p>Designed dimensional data models powering enterprise reporting and large-scale data warehouses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRIPE 3: AI-Powered Data Solutions ===== -->
+    <section class="stripe stripe-dark">
+      <div class="container stripe-container">
+        <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1.27A7 7 0 0 1 14 22h-4a7 7 0 0 1-6.73-3H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="9.5" cy="15.5" r="1"/><circle cx="14.5" cy="15.5" r="1"/></svg>AI-Powered Data Solutions</h2>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Manual work that AI should handle</h2>
+            <p class="stripe-pain">Your team spends weeks on data mapping, migration analysis, and anomaly detection that could be automated. We use Snowflake Cortex AI and modern ML tools to accelerate what used to take months.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Major Pharmaceutical Retail Chain</span>
+                <p>Leveraged Snowflake Cortex AI to automate data-model and transformation mapping from Synapse to Snowflake.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Nationwide Convenience Retailer</span>
+                <p>Built a real-time analytics platform on AWS for fraud detection and automated alerting across nationwide stores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRIPE 4: ETL & Pipeline Engineering ===== -->
+    <section class="stripe stripe-gradient">
+      <div class="container stripe-container">
+        <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="12" y1="2" x2="12" y2="22"/></svg>ETL & Pipeline Engineering</h2>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Fragile pipelines, silent failures</h2>
+            <p class="stripe-pain">Every new source means another copy-pasted pipeline. When one breaks, everything downstream fails silently. We build metadata-driven ETL that scales with your business — not a pile of hardcoded jobs.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Global Footwear Retail Company</span>
+                <p>Built metadata-driven ETL on ADF and Databricks ingesting 25+ source systems with full auditing and logging.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">National Lifestyle Apparel Brand</span>
+                <p>Designed and implemented ETL pipelines on the Azure BI stack integrating multiple source systems.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Healthcare Analytics Company</span>
+                <p>Built and optimized SSIS ETL pipelines, troubleshooting failures in production with 24/7 support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRIPE 5: Observability & Cost Optimization ===== -->
+    <section class="stripe stripe-dark">
       <div class="container stripe-container">
         <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>Observability & Cost Optimization</h2>
         <div class="stripe-content">
@@ -217,8 +239,8 @@
       </div>
     </section>
 
-    <!-- ===== STRIPE 5: Team Leadership & Delivery ===== -->
-    <section class="stripe stripe-dark">
+    <!-- ===== STRIPE 6: Team Leadership & Delivery ===== -->
+    <section class="stripe stripe-gradient">
       <div class="container stripe-container">
         <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>Team Leadership & Delivery</h2>
         <div class="stripe-content">
@@ -240,32 +262,6 @@
               <div class="proof-item">
                 <span class="proof-company">Multi-Client Consulting Firm</span>
                 <p>Served as hands-on Data Architect across four enterprise clients, leading engineers and delivering on time.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== STRIPE 6: AI-Powered Data Solutions ===== -->
-    <section class="stripe stripe-gradient">
-      <div class="container stripe-container">
-        <h2 class="stripe-heading"><svg class="stripe-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1.27A7 7 0 0 1 14 22h-4a7 7 0 0 1-6.73-3H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/><circle cx="9.5" cy="15.5" r="1"/><circle cx="14.5" cy="15.5" r="1"/></svg>AI-Powered Data Solutions</h2>
-        <div class="stripe-content">
-          <div class="stripe-text">
-            <h2 class="stripe-title">Manual work that AI should handle</h2>
-            <p class="stripe-pain">Your team spends weeks on data mapping, migration analysis, and anomaly detection that could be automated. We use Snowflake Cortex AI and modern ML tools to accelerate what used to take months.</p>
-          </div>
-          <div class="stripe-proof">
-            <h3 class="proof-heading">We've done this before</h3>
-            <div class="proof-items">
-              <div class="proof-item">
-                <span class="proof-company">Major Pharmaceutical Retail Chain</span>
-                <p>Leveraged Snowflake Cortex AI to automate data-model and transformation mapping from Synapse to Snowflake.</p>
-              </div>
-              <div class="proof-item">
-                <span class="proof-company">Nationwide Convenience Retailer</span>
-                <p>Built a real-time analytics platform on AWS for fraud detection and automated alerting across nationwide stores.</p>
               </div>
             </div>
           </div>
@@ -368,12 +364,12 @@
             <label for="project">What do you need help with?</label>
             <select id="project" name="project">
               <option value="">Select a focus area...</option>
-              <option value="architecture">Data Architecture & Modeling</option>
-              <option value="etl">ETL & Pipeline Engineering</option>
               <option value="migration">Cloud Platform Migration</option>
+              <option value="architecture">Data Architecture & Modeling</option>
+              <option value="ai">AI-Powered Data Solutions</option>
+              <option value="etl">ETL & Pipeline Engineering</option>
               <option value="observability">Observability & Cost Optimization</option>
               <option value="leadership">Team Leadership & Delivery</option>
-              <option value="ai">AI-Powered Data Solutions</option>
               <option value="other">Other</option>
             </select>
           </div>
@@ -394,7 +390,8 @@
   <footer class="footer">
     <div class="container footer-container">
       <a href="#" class="nav-logo">
-        <img src="zAnalytics_logo.png" alt="zAnalytics" class="nav-logo-img">
+        <span class="logo-icon">Z</span>
+        <span>zAnalytics</span>
       </a>
       <p class="footer-copy">&copy; 2026 zAnalytics. All rights reserved.</p>
     </div>
