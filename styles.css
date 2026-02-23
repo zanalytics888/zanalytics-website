@@ -480,12 +480,21 @@ ul { list-style: none; }
 }
 
 .stripe-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
   font-size: clamp(2.2rem, 5vw, 3.5rem);
   font-weight: 800;
   color: var(--text-primary);
   margin-bottom: 48px;
   line-height: 1.1;
   letter-spacing: -0.5px;
+}
+
+.stripe-icon {
+  flex-shrink: 0;
+  stroke: var(--purple-light);
+  opacity: 0.7;
 }
 
 .stripe-content {
