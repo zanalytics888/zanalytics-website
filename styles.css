@@ -356,33 +356,19 @@ ul { list-style: none; }
   background-clip: text;
 }
 
-.hero-intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 48px;
-  text-align: left;
-  margin-top: 16px;
-  width: 100%;
-  max-width: 100%;
-}
-
-.hero-intro-left p,
-.hero-intro-right p {
+.hero-subtitle {
   font-size: 1.25rem;
   color: var(--text-secondary);
   line-height: 1.7;
-}
-
-.hero-intro-right {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .hero-actions {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Hero Stats Grid */
@@ -867,16 +853,6 @@ ul { list-style: none; }
 
   .hero-title {
     font-size: clamp(2rem, 7vw, 3rem);
-  }
-
-  .hero-intro {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    text-align: center;
-  }
-
-  .hero-intro-right {
-    align-items: center;
   }
 
   .hero-stats-grid {
