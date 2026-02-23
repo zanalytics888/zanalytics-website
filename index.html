@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>zAnalytics | Data Solutions Consulting</title>
+  <meta name="description" content="zAnalytics - Data consulting with 10+ years of enterprise experience in Snowflake, Databricks, DBT, Azure Data Factory, and Apache Airflow. Data solutions that scale.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">Z</span>
+        <span>zAnalytics</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-gradient"></div>
+      <svg class="hero-geo" viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="0,0 500,0 250,400" fill="rgba(255,255,255,0.02)"/>
+        <polygon points="700,0 1440,0 1440,300 900,200" fill="rgba(255,255,255,0.015)"/>
+        <polygon points="1100,400 1440,800 1440,450" fill="rgba(255,255,255,0.02)"/>
+        <polygon points="0,500 350,800 0,800" fill="rgba(255,255,255,0.015)"/>
+      </svg>
+    </div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">10+ Years in Enterprise Data</div>
+        <h1 class="hero-title">
+          Your data is messy.<br>
+          <span class="hero-highlight">We make it work.</span>
+        </h1>
+        <p class="hero-subtitle">
+          We're zAnalytics — a hands-on data consulting firm that builds enterprise-scale platforms on Snowflake, Databricks, DBT, and the modern cloud stack. We've solved data problems for companies like Crocs, Bank of America, and more.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            Start a Conversation
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#solutions" class="btn btn-ghost">See How I Can Help</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-stats-grid">
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">25+</span>
+            <span class="hero-stat-label">Source Systems Integrated</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">PB</span>
+            <span class="hero-stat-label">Scale Platforms Built</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">6+</span>
+            <span class="hero-stat-label">Enterprise Clients</span>
+          </div>
+          <div class="hero-stat-card">
+            <span class="hero-stat-num">24/7</span>
+            <span class="hero-stat-label">Production Support Delivered</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Solutions Stripes -->
+  <div id="solutions">
+
+    <!-- ===== STRIPE 1: Data Architecture & Modeling ===== -->
+    <section class="stripe stripe-dark">
+      <div class="container stripe-container">
+        <div class="stripe-label">
+          <span class="stripe-number">01</span>
+          <span class="stripe-tech">Data Architecture & Modeling</span>
+        </div>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Bad data models don't scale — they collapse</h2>
+            <p class="stripe-pain">Your warehouse is a mess of ad-hoc tables nobody understands. Reports break when upstream changes. We design scalable data models and lakehouse architectures built for growth, not just today's report.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Sogeti / Capgemini</span>
+                <p>Designed scalable physical data models using Snowflake Dynamic Tables, Tasks, and Procedures for an enterprise platform.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Crocs</span>
+                <p>Built platinum-layer data models on Snowflake with DBT across a petabyte-scale, cross-cloud architecture.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Bank of America</span>
+                <p>Designed dimensional data models powering enterprise reporting and large-scale data warehouses.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRIPE 2: ETL & Pipeline Engineering ===== -->
+    <section class="stripe stripe-gradient">
+      <div class="container stripe-container">
+        <div class="stripe-label">
+          <span class="stripe-number">02</span>
+          <span class="stripe-tech">ETL & Pipeline Engineering</span>
+        </div>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Fragile pipelines, silent failures</h2>
+            <p class="stripe-pain">Every new source means another copy-pasted pipeline. When one breaks, everything downstream fails silently. We build metadata-driven ETL that scales with your business — not a pile of hardcoded jobs.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Crocs</span>
+                <p>Built metadata-driven ETL on ADF and Databricks ingesting 25+ source systems with full auditing and logging.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Vineyard Vines</span>
+                <p>Designed and implemented ETL pipelines on the Azure BI stack integrating multiple source systems.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">NaviHealth</span>
+                <p>Built and optimized SSIS ETL pipelines, troubleshooting failures in production with 24/7 support.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRIPE 3: Cloud Platform Migration ===== -->
+    <section class="stripe stripe-dark">
+      <div class="container stripe-container">
+        <div class="stripe-label">
+          <span class="stripe-number">03</span>
+          <span class="stripe-tech">Cloud Platform Migration</span>
+        </div>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Stuck on legacy, hitting every limit</h2>
+            <p class="stripe-pain">Your on-prem database or first-gen cloud platform can't keep up. Storage limits, performance walls, licensing costs. We migrate you to modern platforms — Snowflake, Databricks, Synapse — without losing data or sleep.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Sogeti / Capgemini</span>
+                <p>Used Snowflake Cortex AI to automate data-model mapping from Microsoft Synapse to Snowflake, cutting migration time.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">FormFree</span>
+                <p>Solved Azure SQL storage limits by redesigning the architecture on Azure Synapse SQL Pools.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">LazyDay</span>
+                <p>Migrated from Azure SQL to Delta Lake on Databricks for scalable analytics and reporting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRIPE 4: Observability & Cost Optimization ===== -->
+    <section class="stripe stripe-gradient">
+      <div class="container stripe-container">
+        <div class="stripe-label">
+          <span class="stripe-number">04</span>
+          <span class="stripe-tech">Observability & Cost Optimization</span>
+        </div>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Runaway costs, zero visibility</h2>
+            <p class="stripe-pain">Cloud bills keep climbing and nobody can explain why. Pipelines fail and you find out from a business user, not an alert. We build monitoring, alerting, and cost controls so you always know what's happening.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Sogeti / Capgemini</span>
+                <p>Built enterprise cost monitoring, outage detection, and DR workflows integrating Snowflake with ServiceNow and Datadog.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Crocs</span>
+                <p>Architected cost-tagging, event-driven alerting, and a PowerBI production monitoring dashboard.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Sogeti / Capgemini</span>
+                <p>Rebuilt a DBT monitoring package with PySpark for metadata-driven pipeline observability.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRIPE 5: Team Leadership & Delivery ===== -->
+    <section class="stripe stripe-dark">
+      <div class="container stripe-container">
+        <div class="stripe-label">
+          <span class="stripe-number">05</span>
+          <span class="stripe-tech">Team Leadership & Delivery</span>
+        </div>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Great tech, no one driving it</h2>
+            <p class="stripe-pain">You have the tools but releases slip, teams are misaligned, and production readiness is an afterthought. We lead engineering teams through complex data initiatives with governance, coordination, and accountability.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Crocs</span>
+                <p>Led distributed onshore/offshore engineering team delivering a petabyte-scale platform with 24/7 global support.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Sogeti / Capgemini</span>
+                <p>Led end-to-end release management, deployment coordination, and governance across distributed teams.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">Convergence Consulting</span>
+                <p>Served as hands-on Data Architect across four enterprise clients, leading engineers and delivering on time.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRIPE 6: AI-Powered Data Solutions ===== -->
+    <section class="stripe stripe-gradient">
+      <div class="container stripe-container">
+        <div class="stripe-label">
+          <span class="stripe-number">06</span>
+          <span class="stripe-tech">AI-Powered Data Solutions</span>
+        </div>
+        <div class="stripe-content">
+          <div class="stripe-text">
+            <h2 class="stripe-title">Manual work that AI should handle</h2>
+            <p class="stripe-pain">Your team spends weeks on data mapping, migration analysis, and anomaly detection that could be automated. We use Snowflake Cortex AI and modern ML tools to accelerate what used to take months.</p>
+          </div>
+          <div class="stripe-proof">
+            <h3 class="proof-heading">We've done this before</h3>
+            <div class="proof-items">
+              <div class="proof-item">
+                <span class="proof-company">Sogeti / Capgemini</span>
+                <p>Leveraged Snowflake Cortex AI to automate data-model and transformation mapping from Synapse to Snowflake.</p>
+              </div>
+              <div class="proof-item">
+                <span class="proof-company">RaceTrac</span>
+                <p>Built a real-time analytics platform on AWS for fraud detection and automated alerting across nationwide stores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /solutions -->
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-content">
+          <div class="section-label">About zAnalytics</div>
+          <h2 class="section-title">Built on Engineering Rigor</h2>
+          <p>zAnalytics is founded by Zijian He — a data architect and engineer with a passion for building platforms that just work. With a Master's in Industrial Engineering and a Bachelor's in Information Technology from Purdue University, we bring both analytical depth and hands-on technical skills to every engagement.</p>
+          <p>Over the past decade, we've worked across retail, healthcare, financial services, and consulting — helping organizations like <strong>Crocs</strong>, <strong>Bank of America</strong>, <strong>NaviHealth</strong>, <strong>Vineyard Vines</strong>, <strong>RaceTrac</strong>, and <strong>FormFree</strong> modernize their data infrastructure.</p>
+          <p>Our approach: understand the business problem, design a scalable solution, build it right, and make sure it runs reliably in production.</p>
+          <div class="about-education">
+            <div class="edu-item">
+              <span class="edu-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 4 3 6 3s6-2 6-3v-5"/></svg>
+              </span>
+              <div>
+                <span class="edu-degree">M.S. Industrial Engineering</span>
+                <span class="edu-school">Purdue University, 2016</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <span class="edu-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1 4 3 6 3s6-2 6-3v-5"/></svg>
+              </span>
+              <div>
+                <span class="edu-degree">B.S. Information Technology</span>
+                <span class="edu-school">Purdue University, 2014</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="code-block">
+            <div class="code-header">
+              <span class="code-dot red"></span>
+              <span class="code-dot yellow"></span>
+              <span class="code-dot green"></span>
+              <span class="code-filename">approach.yml</span>
+            </div>
+            <pre><code><span class="ck">company:</span>
+  <span class="ck">name:</span> <span class="cs">"zAnalytics"</span>
+  <span class="ck">founder:</span> <span class="cs">"Zijian He"</span>
+  <span class="ck">focus:</span> <span class="cs">"Data Architecture"</span>
+  <span class="ck">experience:</span> <span class="cn">10+ years</span>
+
+<span class="ck">philosophy:</span>
+  - <span class="cs">"Understand the business"</span>
+  - <span class="cs">"Design for scale"</span>
+  - <span class="cs">"Build it right"</span>
+  - <span class="cs">"Keep it running"</span>
+
+<span class="ck">principles:</span>
+  <span class="ck">reliability:</span> <span class="cb">true</span>
+  <span class="ck">over_engineering:</span> <span class="cb">false</span>
+  <span class="ck">production_ready:</span> <span class="cb">always</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="contact-left">
+          <div class="section-label">Let's Talk</div>
+          <h2 class="section-title">Ready to fix your<br>data problems?</h2>
+          <p>Whether you're modernizing a legacy system, scaling a Snowflake platform, or need a team that actually knows DBT at enterprise scale — let's talk.</p>
+          <div class="contact-details">
+            <a href="mailto:zAnalytics@icloud.com" class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              zAnalytics@icloud.com
+            </a>
+            <div class="contact-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Nashville, TN
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="project">What do you need help with?</label>
+            <select id="project" name="project">
+              <option value="">Select a focus area...</option>
+              <option value="architecture">Data Architecture & Modeling</option>
+              <option value="etl">ETL & Pipeline Engineering</option>
+              <option value="migration">Cloud Platform Migration</option>
+              <option value="observability">Observability & Cost Optimization</option>
+              <option value="leadership">Team Leadership & Delivery</option>
+              <option value="ai">AI-Powered Data Solutions</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Tell me about your data challenge</label>
+            <textarea id="message" name="message" rows="4" required placeholder="What's broken, slow, or holding your team back?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">Z</span>
+        <span>zAnalytics</span>
+      </a>
+      <p class="footer-copy">&copy; 2026 zAnalytics. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <!--
+    To activate the live chat widget:
+    1. Sign up at https://www.tawk.to (free)
+    2. Create a property for "zAnalytics"
+    3. Go to Administration > Chat Widget > copy your embed code
+    4. Replace YOUR_PROPERTY_ID and YOUR_WIDGET_ID below with your actual IDs
+  -->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/YOUR_PROPERTY_ID/YOUR_WIDGET_ID';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>
