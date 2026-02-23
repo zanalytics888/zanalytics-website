@@ -52,6 +52,28 @@ document.querySelectorAll(animatedSelectors.join(', ')).forEach(el => {
   observer.observe(el);
 });
 
+// Animated counter
+const counterEl = document.querySelector('.hero-counter-num');
+if (counterEl) {
+  const target = parseInt(counterEl.dataset.target);
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        let current = 0;
+        const duration = 1500;
+        const step = duration / target;
+        const timer = setInterval(() => {
+          current++;
+          counterEl.textContent = current;
+          if (current >= target) clearInterval(timer);
+        }, step);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  counterObserver.observe(counterEl);
+}
+
 // Stagger proof cards within each stripe
 document.querySelectorAll('.stripe').forEach(stripe => {
   stripe.querySelectorAll('.proof-item').forEach((card, i) => {
