@@ -328,6 +328,10 @@ ul { list-style: none; }
 }
 
 .hero-counter {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: flex-start;
   margin-bottom: 32px;
 }
 
@@ -351,12 +355,12 @@ ul { list-style: none; }
 }
 
 .hero-counter-label {
-  display: block;
   font-size: 1.1rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: var(--text-secondary);
+  line-height: 1.4;
   margin-top: 8px;
 }
 
