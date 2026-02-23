@@ -445,30 +445,13 @@ ul { list-style: none; }
   flex-direction: column;
 }
 
-.stripe-label {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 40px;
-}
-
-.stripe-number {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text-muted);
-}
-
-.stripe-tech {
-  font-size: 0.78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  padding: 6px 18px;
-  border-radius: var(--radius-pill);
-  background: linear-gradient(135deg, rgba(108, 67, 152, 0.2), rgba(66, 95, 199, 0.15));
-  border: 1px solid var(--border-accent);
-  color: var(--purple-light);
+.stripe-heading {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
 }
 
 .stripe-content {

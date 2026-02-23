@@ -38,7 +38,7 @@ const observer = new IntersectionObserver((entries) => {
 const animatedSelectors = [
   '.hero-content',
   '.hero-stats-grid',
-  '.stripe-label',
+  '.stripe-heading',
   '.stripe-text',
   '.proof-item',
   '.about-content',
