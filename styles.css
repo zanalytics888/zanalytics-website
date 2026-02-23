@@ -545,9 +545,7 @@ ul { list-style: none; }
 }
 
 .proof-company {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  display: block;
   font-weight: 700;
   font-size: 1rem;
   background: var(--gradient-text);
@@ -555,15 +553,6 @@ ul { list-style: none; }
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 4px;
-}
-
-.proof-logo {
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  object-fit: contain;
-  flex-shrink: 0;
-  -webkit-text-fill-color: initial;
 }
 
 .proof-item p {
