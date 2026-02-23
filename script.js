@@ -73,27 +73,23 @@ if (counterEl) {
   counterObserver.observe(counterEl);
 }
 
-// Animated stat counters (hero cards)
-document.querySelectorAll('.hero-stat-num[data-target]').forEach(el => {
+// Animated stat counters (hero cards) — run on load with short delay
+function animateCounter(el) {
   const target = parseInt(el.dataset.target);
   const suffix = el.dataset.suffix || '';
-  const statObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        let current = 0;
-        const duration = 1500;
-        const step = duration / target;
-        const timer = setInterval(() => {
-          current++;
-          el.textContent = current + suffix;
-          if (current >= target) clearInterval(timer);
-        }, step);
-        statObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.5 });
-  statObserver.observe(el);
-});
+  let current = 0;
+  const duration = 1500;
+  const step = duration / target;
+  const timer = setInterval(() => {
+    current++;
+    el.textContent = current + suffix;
+    if (current >= target) clearInterval(timer);
+  }, step);
+}
+
+setTimeout(() => {
+  document.querySelectorAll('.hero-stat-num[data-target]').forEach(animateCounter);
+}, 400);
 
 // Stagger proof cards within each stripe
 document.querySelectorAll('.stripe').forEach(stripe => {
